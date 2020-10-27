@@ -17,7 +17,7 @@ public class HttpTest{
 
     public static void doGet() {
         CloseableHttpClient httpClient = HttpClientBuilder.create().build();
-        HttpGet httpGet = new HttpGet("http://localhost:8808/test");
+        HttpGet httpGet = new HttpGet("http://localhost:8088/api/hello");
         CloseableHttpResponse response;
         try {
             response = httpClient.execute(httpGet);
